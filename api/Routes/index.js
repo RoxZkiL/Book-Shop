@@ -1,8 +1,8 @@
 const { Router } = require("express");
-const hola = require("./Routes/hola");
+const topBooks = require("./Top5");
 
 const router = Router();
 
-router.use("/hola", hola);
+router.use("/topBooks", topBooks);
 
 module.exports = router;
