@@ -1,14 +1,14 @@
 const { Router } = require("express");
 
-const books = require("../regalos.json");
+const bd_gifts = require("../regalos.json");
 
-const bookName = require("../libros.json");
+const bd_books = require("../libros.json");
 
 const router = Router();
 
 router.get("/", (req, res) => {
   let output = Object.values(
-    books.reduce((obj, { book }) => {
+    bd_gifts.reduce((obj, { book }) => {
       if (obj[book] === undefined) {
         obj[book] = { bookId: book, occurrence: 1 };
       } else {
@@ -27,11 +27,16 @@ router.get("/", (req, res) => {
       return 0;
     })
     .slice(0, 5);
-  let filteredBooks = bookName.filter(
-    (e) => e.id === output.map((x) => x.bookId)
-  );
-  console.log(filteredBooks);
-  res.send(output);
+
+  const complete = output.map((top) => {
+    for (let i = 0; i < bd_books.length; i++) {
+      if (bd_books[i].id === top.bookId) {
+        return { ...top, title: bd_books[i].title, isn: bd_books[i].iesn };
+      }
+    }
+  });
+
+  res.send(complete);
 });
 
 module.exports = router;
