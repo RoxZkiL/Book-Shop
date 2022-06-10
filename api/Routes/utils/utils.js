@@ -1,4 +1,4 @@
-const topOcurrenceBooks = (bd, AtoZ) => {
+const topOcurrenceBooks = (bd, ascendente) => {
   let output = Object.values(
     bd.reduce((obj, { book }) => {
       if (obj[book] === undefined) {
@@ -9,7 +9,7 @@ const topOcurrenceBooks = (bd, AtoZ) => {
       return obj;
     }, {})
   );
-  if (AtoZ) {
+  if (ascendente) {
     output.sort((a, b) => {
       if (a.occurrence > b.occurrence) {
         return -1;
@@ -34,4 +34,4 @@ const topOcurrenceBooks = (bd, AtoZ) => {
   return output;
 };
 
-module.exports = {topOcurrenceBooks}
+module.exports = { topOcurrenceBooks };

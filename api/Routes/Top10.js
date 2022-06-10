@@ -5,7 +5,6 @@ const router = Router();
 const { topOcurrenceBooks } = require("./utils/utils");
 
 router.get("/", (req, res) => {
-
   const output = topOcurrenceBooks(bd_gifts, true);
 
   const filtro = bd_books
@@ -15,7 +14,7 @@ router.get("/", (req, res) => {
     })
     .slice(0, 10);
 
-    res.send(filtro);
+  res.send(filtro);
 });
 
 router.get("/:order", (req, res) => {
@@ -30,7 +29,7 @@ router.get("/:order", (req, res) => {
     })
     .slice(0, 10);
 
-  if (order === "alphabetical") {
+  if (order.toLowerCase() === "alphabetical") {
     filtro.sort((name1, name2) => {
       const title1 = name1.title.toLowerCase();
       const title2 = name2.title.toLowerCase();
@@ -40,7 +39,7 @@ router.get("/:order", (req, res) => {
       return 0;
     });
     res.send(filtro);
-  } else if (order === "publishDate") {
+  } else if (order.toLowerCase() === "publishdate") {
     filtro.sort((date1, date2) => {
       const firstFecha = Number(date1["publish date"].slice(0, 4));
       const secondFecha = Number(date2["publish date"].slice(0, 4));
