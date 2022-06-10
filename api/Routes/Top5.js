@@ -31,7 +31,7 @@ router.get("/", (req, res) => {
   const complete = output.map((top) => {
     for (let i = 0; i < bd_books.length; i++) {
       if (bd_books[i].id === top.bookId) {
-        return { ...top, title: bd_books[i].title, isn: bd_books[i].iesn };
+        return { ...top, title: bd_books[i].title, isn: bd_books[i].iesn,Editorial: bd_books[i].Editorial, author: bd_books[i].author,publish_date: bd_books[i]["publish date"] };
       }
     }
   });
