@@ -1,6 +1,6 @@
 const { Router } = require("express");
-const bd_gifts = require("../regalos.json");
-const bd_books = require("../libros.json");
+const bd_books = require("../Database/libros.json");
+const bd_gifts = require("../Database/regalos.json");
 const router = Router();
 const { topOcurrenceBooks } = require("./utils/utils");
 
@@ -19,7 +19,7 @@ router.get("/", (req, res) => {
 
 router.get("/:order", (req, res) => {
   const order = req.params.order;
-  
+
   const output = topOcurrenceBooks(bd_gifts, true);
 
   const filtro = bd_books
