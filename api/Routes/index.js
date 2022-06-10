@@ -1,12 +1,14 @@
 const { Router } = require("express");
-const top5 = require("./Top5");
-const top10 = require("./Top10");
+const topCinco = require("./Top5");
+const topDieZ = require("./Top10");
 const detail = require("./Details");
+const userDetail = require("./DetailUser")
 
 const router = Router();
 
-router.use("/top5", top5);
-router.use("/top10", top10);
+router.use("/topCinco", topCinco);
+router.use("/topDieZ", topDieZ);
 router.use("/detail", detail);
+router.use("/search", userDetail);
 
 module.exports = router;
