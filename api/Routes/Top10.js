@@ -20,7 +20,7 @@ router.get("/", (req, res) => {
 
 router.get("/:order", (req, res) => {
   const order = req.params.order;
-  console.log(order);
+  
   const output = topOcurrenceBooks(bd_gifts, true);
 
   const filtro = bd_books
@@ -34,7 +34,6 @@ router.get("/:order", (req, res) => {
     filtro.sort((name1, name2) => {
       const title1 = name1.title.toLowerCase();
       const title2 = name2.title.toLowerCase();
-
       if (title1 < title2) return -1;
       if (title1 > title2) return 1;
       return 0;
