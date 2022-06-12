@@ -1,25 +1,22 @@
 import React from "react";
-import { LoremIpsum } from "react-lorem-ipsum";
-import image from "./media/image.png";
+import image from "./media/imageTestimony.jpg";
+import style from "./Testimony.module.css";
+import TestimonySlider from "./TestimonySlider";
 
 const Testimony = () => {
   return (
-    <>
-      <section>
-        <p>Titulo "Testimonio"</p>
-        <div>
-          <img src={image} alt="not found" />
-          <legend>
-            <p>
-              <LoremIpsum p={1} avgSentencesPerParagraph={18} />
-            </p>
-          </legend>
-          <p>Nombre</p>
-          <p>Puesto de trabajo</p>
-          <p>Empresa</p>
-        </div>
-      </section>
-    </>
+    <div className={style.body}>
+      <img className={style.image} src={image} alt="not found" />
+      <div className={style.div1}>
+        <p className={style.p}>
+          Estos son algunos de los testimonios de nuestros clientes que
+          certifican la calidad de nuestro software.
+        </p>
+      </div>
+      <div className={style.div2}>
+        <TestimonySlider />
+      </div>
+    </div>
   );
 };
 

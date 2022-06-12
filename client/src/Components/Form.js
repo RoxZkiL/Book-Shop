@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ContentForm from "./ContentForm";
+import Button from "@mui/material/Button";
 
 const Form = () => {
   const navigate = useNavigate();
@@ -66,6 +67,7 @@ const Form = () => {
           name="company"
           value={input.company}
         />
+        <Button variant="outlined">Outlined</Button>
         <button type="submit">Enviar</button>
       </form>
     </>
