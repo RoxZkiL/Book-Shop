@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Play:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kdam+Thmor+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 .parent {
     display: grid;
@@ -27,38 +28,55 @@
         background-image: url("https://img.freepik.com/free-vector/simple-white-grey-abstract-background_13364-84.jpg?w=1380");
         border-radius: 20px 20px 20px 20px;
         opacity: 0.7;
+        height: 450px;
     }
 
     .div1 { grid-area: 1 / 1 / 2 / 4;
-        font-family: 'Russo One', sans-serif;
+        font-family: 'Black Ops One', cursive;
         text-align: center;
         padding-top: 2%;
         color: rgb(0, 0, 0);
-        font-size: 22px;
+        font-size: 24px;
+        text-shadow: 2px 2px 2px rgb(0, 15, 228);
     }
-    .div2 { grid-area: 2 / 1 / 5 / 4;
+
+    .div2 { 
+        grid-area: 2 / 1 / 5 / 4;
         text-align: center;
-        padding-top: 4%;
+        padding-top: 2%;
         padding-right: 4%;
-        font-size: 20px;
-        font-family: 'Play', sans-serif;
+        font-size: 22px;
+        font-family: 'Mitr', sans-serif;
         text-align: justify;
-        padding-left: 6%; }
-    .div3 { grid-area: 1 / 4 / 4 / 5;
+        padding-left: 6%;
+        font-weight: 600;
+     }
+
+    .div3 { 
+        grid-area: 1 / 4 / 4 / 5;
         font-family: 'Staatliches', cursive;
         font-size: 20px;
-        text-align: center; }
-    .div4 { grid-area: 4 / 4 / 5 / 5;
-        text-align: center; }
+        text-align: center; 
+    }
+    .div4 { 
+        grid-area: 4 / 4 / 5 / 5;
+        text-align: center; 
+    }
 
         .h3 {
             color: rgb(0, 8, 255);
             font-weight: 800;
+            font-size: 24px;
+        }
+
+        .h4 {
+            font-size: 20px;
         }
 
         .h5 {
             color: red;
             text-decoration: line-through;
+            font-size: 18px;
         }
 
     .image {
@@ -72,7 +90,7 @@
       .button {
         cursor: pointer;
         font-family: 'Spline Sans Mono', monospace;
-        width: 160px;
+        width: 150px;
         padding: 15px 25px;
         border: unset;
         border-radius: 15px;
@@ -92,11 +110,12 @@
     
        @media screen and (max-width: 960px) {
         .parentdiv {
-            width: 400px;
+            width: 390px;
         }
 
         .div2 {
             padding-right: 6%;
+            font-size: 18px;
         }
 
         .secondDiv {

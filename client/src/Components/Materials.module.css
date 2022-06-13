@@ -97,14 +97,11 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-      width: 503px;
     }
 
     .input {
         width: 450px;
       }
 
-      .image {
-        width: 503px;
-      }
+
    }

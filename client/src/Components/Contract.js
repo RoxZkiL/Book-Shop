@@ -13,7 +13,7 @@ const Contract = () => {
           </div>
           <div className={style.div3}>
             <h3 className={style.h3}>30% DCTO</h3>
-            <h4>Ahora: CLP 24.500</h4>
+            <h4 className={style.h4}>Ahora: CLP 24.500</h4>
             <h5 className={style.h5}>Antes: 35.000</h5>
           </div>
           <div className={style.div2}>
