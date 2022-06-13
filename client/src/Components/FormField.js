@@ -34,7 +34,7 @@ const FormField = () => {
       sx={{
         "& .MuiTextField-root": {
           m: 1,
-          width: "80ch",
+          width: "50ch",
           color: "white",
           display: "flex",
         },
