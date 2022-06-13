@@ -46,7 +46,7 @@ const FormField = () => {
       <div>
         <Typography
           sx={{
-            fontFamily: "monospace",
+            fontFamily: "BlinkMacSystemFont",
             fontWeight: 800,
             color: "#ffffff",
             pb: "10%",

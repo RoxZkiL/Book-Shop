@@ -10,7 +10,7 @@ const Form = () => {
     <div className={style.parent}>
       <img className={style.image} src={image2} alt="not found" />
       <div className={style.div1}>
-        <img src={image} alt="not found" />
+        <img className={style.image2} src={image} alt="not found" />
       </div>
       <div className={style.div2}>
         <p>Rentabiliza tu negocio de Proyectos de construccion o ensamblado</p>
@@ -29,9 +29,6 @@ const Form = () => {
           Your browser does not support HTML video.
         </video>
       </div>
-      {/* <div className={style.div3}> */}
-
-      {/* </div> */}
       <div className={style.div4}>
         <FormField />
       </div>
