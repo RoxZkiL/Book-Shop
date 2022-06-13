@@ -23,7 +23,7 @@ const Form = () => {
           par de clicks. Software desarrollado con el foco en la usabilidad de
           los usuarios. Capacitaciones contínuas a tu personal.
         </p>
-        <video className={style.video} width="700" height="230" controls>
+        <video className={style.video} width="700" height="240" controls>
           <source src={video} type="video/mp4" />
           <source src={video} type="video/ogg" />
           Your browser does not support HTML video.
