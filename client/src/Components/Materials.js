@@ -11,7 +11,7 @@ const Materials = () => {
   return (
     <div className={style.body}>
       <img className={style.image} src={image} alt="not found" />
-      <div className={style.navBar}>
+      <div>
         <MaterialsNavBar />
       </div>
       <form onSubmit={(e) => preventForm(e)}>

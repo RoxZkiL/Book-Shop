@@ -37,18 +37,18 @@
         padding-top: 2%;
         color: rgb(0, 0, 0);
         font-size: 24px;
-        text-shadow: 2px 2px 2px rgb(0, 15, 228);
+        /* text-shadow: 2px 2px 2px rgb(0, 15, 228); */
     }
 
     .div2 { 
         grid-area: 2 / 1 / 5 / 4;
         text-align: center;
-        padding-top: 2%;
+        padding-top: 3%;
         padding-right: 4%;
         font-size: 22px;
         font-family: 'Mitr', sans-serif;
         text-align: justify;
-        padding-left: 6%;
+        padding-left: 8%;
         font-weight: 600;
      }
 
@@ -66,17 +66,17 @@
         .h3 {
             color: rgb(0, 8, 255);
             font-weight: 800;
-            font-size: 24px;
+            font-size: 26px;
         }
 
         .h4 {
-            font-size: 20px;
+            font-size: 22px;
         }
 
         .h5 {
             color: red;
             text-decoration: line-through;
-            font-size: 18px;
+            font-size: 20px;
         }
 
     .image {
@@ -119,6 +119,6 @@
         }
 
         .secondDiv {
-            height: 500px;
+            height: 530px;
         }
     }

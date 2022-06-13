@@ -65,7 +65,7 @@ function TestimonySlider() {
   };
 
   return (
-    <Box sx={{ maxWidth: 600, flexGrow: 1, maxHeight: 900 }}>
+    <Box sx={{ maxWidth: 600, flexGrow: 1, maxHeight: 800 }}>
       <Paper
         square
         elevation={2}

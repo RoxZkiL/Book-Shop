@@ -51,7 +51,7 @@ export default function FullWidthTabs() {
       sx={{
         bgcolor: "background.paper",
         mx: "auto",
-        width: 480,
+        width: 470,
       }}
     >
       <AppBar position="static">

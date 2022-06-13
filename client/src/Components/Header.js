@@ -10,7 +10,7 @@ export const Header = () => {
       <h2>Rentabiliza tu Negocio de Proyectos de Construcción o Ensamblado</h2>
       <p>
         Nuestro software es de clase mundial el cual permite la creación y
-        gestión de presupuesto y planificacion de ejecucion de manera fácil,
+        gestión de presupuesto y planificación de ejecución de manera fácil,
         rápida y segura.
       </p>
       <Link to="/formulario">

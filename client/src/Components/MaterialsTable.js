@@ -42,7 +42,7 @@ export default function MateriaslTable() {
   return (
     <TableContainer
       component={Paper}
-      sx={{ bgcolor: "#263238", mx: "auto", width: 480 }}
+      sx={{ bgcolor: "#263238", mx: "auto", width: 470 }}
     >
       <Table sx={{ width: "100%" }}>
         <TableHead
