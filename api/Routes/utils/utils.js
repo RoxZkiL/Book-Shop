@@ -73,13 +73,13 @@ const idGroups = (dataBase) => {
         }
       }
     }
-    return bd.filter((bd) => bd.length > 0).map(bd => [...new Set(bd)].sort((n1,n2)=>n1-n2));
+    return bd
+      .filter((bd) => bd.length > 0)
+      .map((bd) => [...new Set(bd)].sort((n1, n2) => n1 - n2));
   };
-  
-  
+
   return splitArray(splitArray(allGroupsArray));
 };
-
 
 module.exports = { topOcurrenceBooks, idGroups };
 

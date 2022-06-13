@@ -10,7 +10,7 @@ const Testimony = () => {
       <div className={style.div1}>
         <p className={style.p}>
           Estos son algunos de los testimonios de nuestros clientes que
-          certifican la calidad de nuestro software.
+          certifican la calidad de nuestro software
         </p>
       </div>
       <div className={style.div2}>

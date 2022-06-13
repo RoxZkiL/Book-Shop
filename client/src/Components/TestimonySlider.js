@@ -18,16 +18,14 @@ const images = [
     description: `Desde que empezamos a utilizar el software, hemos logrado posicionarnos
     en el mercado y generar una ventaja competitiva gracias a la rapidez y
     eficiencia que nos entrega este software a la hora de evaluar y presupuestar nuevos proyectos.`,
-    imgPath:
-      "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
-    puesto: "Ges Chile",
+    imgPath: "https://i.ibb.co/J3YtRgC/pexels-andrea-piacquadio-927022.jpg",
+    puesto: "GesChile, S.p.A.",
     empresa: "Tech Lead",
   },
   {
     label: "Jesus Matute",
     description: `Este software es increible, nos ha ayudado enormemente con el crecimiento de nuestra empresa.`,
-    imgPath:
-      "https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/kKLnmHL/pexels-buro-millennial-1438081.jpg",
     puesto: "Software Developer",
     empresa: "RoxZkiL, Inc.",
   },
@@ -36,18 +34,16 @@ const images = [
     description: `Desde que empezamos a utilizar el software, hemos logrado posicionarnos
     en el mercado y generar una ventaja competitiva gracias a la rapidez y
     eficiencia del software.`,
-    imgPath:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80",
+    imgPath: "https://i.ibb.co/Nj5RQqM/pexels-andrea-piacquadio-826349.jpg",
     puesto: "Bussines Manager",
     empresa: "Meta, Corp.",
   },
   {
     label: "Francisco Perez",
     description: `Es un software muy rapido y eficiente, calzó perfectamente con nuestras exprectativas.`,
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/QmJWstb/pexels-djordje-petrovic-2102415.jpg",
     puesto: "Sales Analit",
-    empresa: "Costanera, S.A.",
+    empresa: "Costanera, S.p.A.",
   },
 ];
 
@@ -69,7 +65,7 @@ function TestimonySlider() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Box sx={{ maxWidth: 600, flexGrow: 1, maxHeight: 900 }}>
       <Paper
         square
         elevation={2}
@@ -77,7 +73,7 @@ function TestimonySlider() {
           display: "flex",
           height: 50,
           pl: 2,
-          bgcolor: "#212121",
+          bgcolor: "#000000",
         }}
       >
         <Typography
@@ -86,6 +82,9 @@ function TestimonySlider() {
             fontWeight: 900,
             color: "#e3f2fd",
             textDecoration: "none",
+            mx: "auto",
+            pt: "2%",
+            fontSize: 18,
           }}
         >
           {images[activeStep].label}
@@ -116,7 +115,7 @@ function TestimonySlider() {
                 sx={{
                   height: 255,
                   display: "block",
-                  maxWidth: 400,
+                  maxWidth: 900,
                   overflow: "hidden",
                   width: "100%",
                 }}
@@ -129,7 +128,7 @@ function TestimonySlider() {
       </AutoPlaySwipeableViews>
       <Typography
         sx={{
-          bgcolor: "#212121",
+          bgcolor: "#000000",
           fontFamily: "monospace",
           fontWeight: 900,
           color: "#e3f2fd",
@@ -140,7 +139,7 @@ function TestimonySlider() {
       </Typography>
       <Typography
         sx={{
-          bgcolor: "#212121",
+          bgcolor: "#000000",
           fontFamily: "monospace",
           fontWeight: 900,
           color: "#e3f2fd",

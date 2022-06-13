@@ -7,10 +7,10 @@ const Description = () => {
   return (
     <div className={style.parent}>
       <img className={style.image} src={image} alt="not found" />
-      <div className={style.div1}>Hasta 60% reduccion de mermas </div>
+      <div className={style.div1}>Hasta 60% reducción de mermas </div>
       <div className={style.div2}>Mas de 62 años en el mercado</div>
       <div className={style.div3}>Hasta 65% de ahorro en HH mensuales</div>
-      <div className={style.div4}>Hazlo Facil </div>
+      <div className={style.div4}>Hazlo Fácil</div>
       <div className={style.div5}>
         Mas de 16000 usuarios utilizar nuestro software diariamente a nivel
         mundial

@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <div className={style.cover}>
       <img className={style.image} src={image} alt="not found" />
-      <h2>Rentabiliza tu negocio de Proyectos de construccion o ensamblado</h2>
+      <h2>Rentabiliza tu Negocio de Proyectos de Construcción o Ensamblado</h2>
       <p>
         Nuestro software es de clase mundial el cual permite la creación y
         gestión de presupuesto y planificacion de ejecucion de manera fácil,

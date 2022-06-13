@@ -79,6 +79,7 @@ export default function FullWidthTabs() {
               letterSpacing: ".2rem",
               color: "inherit",
               textDecoration: "none",
+              fontSize: 20,
             }}
             label="Tornillos"
             {...a11yProps(0)}
@@ -91,6 +92,7 @@ export default function FullWidthTabs() {
               letterSpacing: ".2rem",
               color: "inherit",
               textDecoration: "none",
+              fontSize: 20,
             }}
             label="Tuercas"
             {...a11yProps(1)}

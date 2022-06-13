@@ -56,6 +56,7 @@ export default function MateriaslTable() {
                 fontWeight: 900,
                 color: "#e3f2fd",
                 textDecoration: "none",
+                fontSize: 18,
               }}
               align="center"
             >
@@ -68,6 +69,7 @@ export default function MateriaslTable() {
                 fontWeight: 900,
                 color: "#e3f2fd",
                 textDecoration: "none",
+                fontSize: 18,
               }}
               align="center"
             >
