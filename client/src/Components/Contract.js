@@ -1,6 +1,7 @@
 import React from "react";
 import image from "./media/imageContract.jpg";
 import style from "./Contract.module.css";
+import { Link } from "react-router-dom";
 
 const Contract = () => {
   return (
@@ -25,7 +26,9 @@ const Contract = () => {
             </p>
           </div>
           <div className={style.div4}>
-            <button className={style.button}>Contrátalo</button>
+            <Link to="/formulario">
+              <button className={style.button}>Contrátalo</button>
+            </Link>
           </div>
         </div>
       </div>

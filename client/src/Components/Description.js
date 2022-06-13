@@ -16,7 +16,7 @@ const Description = () => {
         mundial
       </div>
       <div className={style.div6}>
-        <video className={style.video} width="1000" height="300" controls>
+        <video className={style.video} width="1000" height="250" controls>
           <source src={video} type="video/mp4" />
           <source src={video} type="video/ogg" />
           Your browser does not support HTML video.
