@@ -80,8 +80,31 @@ const idGroups = (dataBase) => {
 
   return splitArray(splitArray(allGroupsArray));
 };
+const alphabeticalId = (bd_regalos, bd_usuarios) =>{
+  for (let i = 0; i < bd_regalos.length; i++) {
+    const cambiazo = bd_regalos[i].map((e) => {
+      for (let x = 0; x < bd_usuarios.length; x++) {
+        if (e === bd_usuarios[x].id) {
+          return { id: bd_usuarios[x].id, name: bd_usuarios[x].name };
+        }
+      }
+    });
+   bd_regalos[i] = cambiazo.sort((n1, n2)=>{
+      if(n1.name < n2.name)return -1
+      if(n1.name > n2.name)return 1
+      return 0
+    });
+  }
+  
+  for (let j = 0; j < bd_regalos.length; j++) {
+    const soloId = bd_regalos[j].map(e=>{return e.id})
+    bd_regalos[j]=soloId
+  }
+return bd_regalos
+}
 
-module.exports = { topOcurrenceBooks, idGroups };
+module.exports = { topOcurrenceBooks, idGroups,alphabeticalId };
+
 
 /* const absoluteArray = [];
 const bannedId = [];
